@@ -1,0 +1,8 @@
+<div class="ui container">
+  <h3 class="ui center aligned header" style="margin: 2rem 0;">Apnapedia</h3>
+
+  <app-serach-bar (emitter)="onEmit($event)"></app-serach-bar>
+
+  <app-page-list *ngIf="pages.length" [pagesAria] = "pages"></app-page-list>
+
+</div>
